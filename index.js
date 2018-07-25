@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 app.use(cors({ optionsSuccessStatus: 200 }));
-// socket -> Socket.TCP.owner
+
 app.get('/api/whoami', (req, res) => {
   res.send({
     ipaddress: req.ip,

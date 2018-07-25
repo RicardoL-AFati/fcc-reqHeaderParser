@@ -7,6 +7,10 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "engines": {
+    "node": "8.11.1",
+    "npm": "6.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RicardoL-AFati/fcc-reqHeaderParser.git"
@@ -16,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/RicardoL-AFati/fcc-reqHeaderParser/issues"
   },
-  "homepage": "https://github.com/RicardoL-AFati/fcc-reqHeaderParser#readme"
+  "homepage": "https://fcc-reqheaderparser.herokuapp.com/",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
 }
