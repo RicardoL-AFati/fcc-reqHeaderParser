@@ -1,0 +1,20 @@
+{
+  "name": "reqheaderparser",
+  "version": "1.0.0",
+  "description": "An FCC Backend Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoL-AFati/fcc-reqHeaderParser.git"
+  },
+  "author": "Ricardo Ledesma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RicardoL-AFati/fcc-reqHeaderParser/issues"
+  },
+  "homepage": "https://github.com/RicardoL-AFati/fcc-reqHeaderParser#readme"
+}
