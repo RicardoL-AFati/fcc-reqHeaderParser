@@ -6,11 +6,13 @@ const app = express();
 app.use(cors({ optionsSuccessStatus: 200 }));
 
 app.get('/api/whoami', (req, res) => {
-  console.log(req.headers['x-forwarded-for']);
-  console.log(req.header['x-forwarded-for']);
-  console.log(req.connection.remoteAddress);
+  let { ip } = req;
+  const ipv6Regex = /:{2}f{4}:/;
+  if (req.ip.match(ipv6Regex)) {
+    ip = ip.replace(ipv6Regex, '');
+  }
   res.send({
-    ipaddress: req.connection.remoteAddress,
+    ipaddress: ip,
     language: req.headers['accept-language'],
     software: req.headers['user-agent'],
   });
